@@ -18,7 +18,7 @@ https://templatemo.com/tm-583-festava-live
   --custom-btn-bg-color:          #EE5007;
   --custom-btn-bg-hover-color:    #c01f27;
   --dark-color:                   #000000;
-  --p-color:                      #8a0a0a;
+  --p-color:                      #8a4c0a;
   --border-color:                 #7fffd4;
   --link-hover-color:             #c21e1e;
 
@@ -506,8 +506,8 @@ strong {
   ABOUT              
 -----------------------------------------*/
 .about-section {
-  background-image: url('../images/edward-unsplash-blur.jpg');
-  background-color: #704010;
+  background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
+  background-color: #714213;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
