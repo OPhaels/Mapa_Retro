@@ -1,0 +1,101 @@
+/* Fontes e cores rústicas */
+body {
+    background-color: #1E1E1E;
+    color: #f3e9d2;
+    font-family: 'Merriweather', serif;
+}
+
+.logo {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #efeeee !important;
+    font-weight: 600;
+}
+
+
+.nav-link:hover {
+    color: #E74C3C !important;
+}
+
+/* Hero */
+#hero {
+    height: 60vh;
+    background: url('/data/images/background.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#hero h2,
+#hero p {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+/* Section Titles */
+.section-title {
+    font-family: 'Special Elite', cursive;
+    color: #db7909;
+    border-left: 4px solid #D97706;
+    padding-left: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2E1F0F;
+    color: #f3e9d2;
+    font-size: 10pt;
+}
+
+footer a {
+    color: #F1C40F;
+    font-size: 13pt;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #E74C3C;
+}
+
+/* Responsividade específica */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
+
+/* Menu lateral (escondido por padrão) */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 250px;
+    height: 100vh;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+}
+
+/* Quando visível */
+.mobile-menu.active {
+    left: 0;
+}
+
+
+/* Oculta o menu fora do mobile */
+@media (min-width: 768px) {
+
+    #mobile-menu,
+    #menu-toggle {
+        display: none;
+    }
+}

@@ -1,646 +1,149 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAPA RETRÔ</title>
 
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Banda - Mapa Retrô</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Merriweather&display=swap" rel="stylesheet">
 
-    <!-- CSS FILES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-    <link href="css/templatemo-festava-live.css" rel="stylesheet">
-
-    <!--
-
-TemplateMo 583 Festava Live
-
-https://templatemo.com/tm-583-festava-live
-
--->
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="bg-light">
 
-    <main>
+  <!-- HEADER -->
+  <header class="bg-dark text-white py-3 px-4">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
 
-        <header class="site-header">
-            <div class="container">
-                <div class="row">
+      <!-- Logo sempre visível -->
+      <div class="fs-4 fw-bold">MAPA RETRÔ</div>
 
-                    <div class="col-lg-12 col-12 d-flex flex-wrap">
-                        <p class="d-flex me-4 mb-0">
-                            <i class="bi-person custom-icon me-2"></i>
-                            <strong class="text-white">Bem-vindo(a) ao nosso perfil!</strong>
-                        </p>
-                    </div>
+      <!-- Menu Desktop -->
+      <nav class="d-none d-md-block">
+        <ul class="nav gap-3">
+          <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#integrantes">Integrantes</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#videos">Vídeos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
 
-                </div>
+      <!-- Menu Mobile -->
+      <button class="btn btn-outline-light d-md-none" id="menu-toggle">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Aside Mobile Menu -->
+  <!-- ASIDE MOBILE MENU -->
+  <aside id="mobile-menu" class="mobile-menu bg-dark text-white p-4">
+    <button class="btn-close btn-close-white mb-4" id="close-menu"></button>
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#integrantes">Integrantes</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#videos">Vídeos</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="text-center text-white d-flex align-items-center justify-content-center">
+      <div class="container">
+        <h2 class="display-5">Sertanejo Raiz com Identidade</h2>
+        <p class="lead">Modão, viola e coração no compasso</p>
+      </div>
+    </section>
+
+    <!-- SOBRE A BANDA -->
+    <section id="sobre" class=" bg-dark py-5">
+      <div class="container">
+        <h3 class="section-title mb-4">Sobre a Banda</h3>
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <p class="mx-3">
+              A <strong>MAPA RETRÔ</strong> é uma banda apaixonada pelo sertanejo clássico e de raiz.
+              Com influências dos modões antigos, trazemos à tona a verdadeira essência do som do interior
+              com autenticidade e emoção.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/YOUTUBE_ID" title="Vídeo da Banda" allowfullscreen></iframe>
             </div>
-        </header>
-
-
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    Mapa Retrô
-                </a>
-
-                <a href="https://w.app/mapa_retro" class="btn custom-btn d-lg-none ms-auto me-4">Entrar em Contato</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Dashboard</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">Sobre</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Artistas</a>
-                        </li>
-                    </ul>
-
-                    <a href="https://w.app/mapa_retro" class="btn custom-btn d-lg-block d-none">Entrar em contato</a>
-                </div>
-            </div>
-        </nav>
-
-
-        <section class="hero-section" id="section_1">
-            <div class="section-overlay"></div>
-
-            <div class="container d-flex justify-content-center align-items-center">
-                <div class="row">
-
-                    <div class="col-12 mt-auto mb-5 text-center">
-                        <small>O melhor da música apresenta...</small>
-
-                        <h1 class="text-white mb-5">MAPA <b
-                                style="color:red; text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.719)">RETRÔ</b>
-                        </h1>
-
-                        <a class="btn custom-btn smoothscroll" href="#section_2">Ver mais</a>
-                    </div>
-
-                    <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
-                        <div class="date-wrap">
-                            <h5 class="text-white">
-                                <i class="custom-icon bi-clock me-2"></i>
-                                07/2025
-                            </h5>
-                        </div>
-
-                        <div class="location-wrap mx-auto py-3 py-lg-0">
-                            <h5 class="text-white">
-                                <i class="custom-icon bi-geo-alt me-2"></i>
-                                Em todo o Brasil
-                            </h5>
-                        </div>
-
-                        <div class="social-share">
-                            <ul class="social-icon d-flex align-items-center justify-content-center">
-                                <span class="text-white me-3">Verifique nossas redes sociais</span>
-
-                                <!--<li class="social-icon-item">
-                                        <a href="#" class="social-icon-link">
-                                            <span class="bi-facebook"></span>
-                                        </a>
-                                    </li> -->
-
-                                <li class="social-icon-item">
-                                    <a href="https://w.app/mapa_retro" class="social-icon-link">
-                                        <span class="bi-whatsapp"></span>
-                                    </a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="https://www.instagram.com/reel/DHmKLTKPbyXikOOzVCl3FVniXGFKOFvXAXUeYo0/?igsh=d3Q5MXpiNXZ4ZnV1"
-                                        class="social-icon-link">
-                                        <span class="bi-instagram"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="video-wrap">
-                <video autoplay="" loop="" muted="" class="custom-video" poster="">
-                    <source src="video/pexels-2022395.mp4" type="video/mp4">
-                    Seu navegador não suporta esse vídeo.
-                </video>
-            </div>
-        </section>
-
-
-        <section class="about-section section-padding" id="section_2">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
-                        <div class="services-info">
-                            <h2 class="text-white mb-4">Sobre nós</h2>
-
-                            <p class="text-white">Há mais de 30 anos levando emoção, alegria e muita música aos palcos.
-                                Somos uma banda de baile experiente, versátil e pronta para transformar qualquer evento
-                                em uma grande celebração.
-                            <h6 class="text-white mt-4">Música para Todos os Momentos</h6>
-
-                            <p class="text-white">Repertório nacional e internacional, com clássicos do rock, pop rock,
-                                românticas e músicas dançantes. Tudo pensado para animar do começo ao fim.
-                            <h6 class="text-white mt-4">Experiência Inesquecível</h6>
-
-                            <p class="text-white">Já participamos de centenas de festas de empresas, casamentos e
-                                aniversários. Cada apresentação é única e feita com paixão.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12">
-                        <div class="about-text-wrap">
-                            <img src="images/tema.jpg" class="about-image img-fluid">
-
-                            <div class="about-text-info d-flex">
-                                <div class="d-flex">
-                                </div>
-
-
-                                <div class="ms-4">
-                                    <h3>Mapa Retrô</h3>
-
-                                    <p class="mb-0">A melhor banda que você conhece</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section class="artists-section section-padding" id="section_3">
-            <div class="container">
-                <div class="row justify-content-center">
-
-                    <div class="col-12 text-center">
-                        <h2 class="mb-4">Conheça os artistas</h1>
-                    </div>
-
-                    <div class="col-lg-5 col-12">
-                        <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="images/cristiano-1.jpg" class="artists-image img-fluid">
-                            </div>
-
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Nome:</strong>
-                                    Cristiano Marçal
-                                </p>
-                                <p>
-                                    <strong>Habilidade: </strong>
-                                    Guitarra &amp; Violão
-                                </p>
-
-                                <hr>
-
-                                <p class="mb-0">
-                                    <strong>Instagram: </strong>
-                                    <a
-                                        href="https://www.instagram.com/marcal_gt?igsh=MWRrZ2NoZzh4MWNheQ%3D%3D&utm_source=qr">Marçal
-                                        GT</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5 col-12">
-                        <div class="artists-thumb">
-                            <div class="artists-image-wrap">
-                                <img src="images/vocalista.jpg" class="artists-image img-fluid">
-                            </div>
-
-                            <div class="artists-hover">
-                                <p>
-                                    <strong>Nome:</strong>
-                                    Michel Furness
-                                </p>
-
-                                <p>
-                                    <strong>Habilidade: </strong>
-                                    Voz
-                                </p>
-
-                                <hr>
-                            </div>
-                        </div>
-
-                        <!-- <div class="artists-thumb">
-                                <img src="images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg" class="artists-image img-fluid">
-
-                                <div class="artists-hover">
-                                    <p>
-                                        <strong>Name:</strong>
-                                        Bruno Bros
-                                    </p>
-
-                                    <p>
-                                        <strong>Birthdate:</strong>
-                                        October 8, 1985
-                                    </p>
-
-                                    <p>
-                                        <strong>Music:</strong>
-                                        Pop
-                                    </p>
-
-                                    <hr>
-
-                                    <p class="mb-0">
-                                        <strong>Youtube Channel:</strong>
-                                        <a href="#">Bruno Official</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="schedule-section section-padding" id="section_4">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-12 text-center">
-                            <h2 class="text-white mb-4">Event Schedule</h1>
-
-                            <div class="table-responsive">
-                                <table class="schedule-table table table-dark">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Date</th>
-
-                                            <th scope="col">Wednesday</th>
-
-                                            <th scope="col">Thursday</th>
-
-                                            <th scope="col">Friday</th>
-
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">Day 1</th>
-
-                                            <td class="table-background-image-wrap pop-background-image">
-                                                <h3>Pop Night</h3>
-
-                                                <p class="mb-2">5:00 - 7:00 PM</p>
-
-                                                <p>By Adele</p>
-
-                                                <div class="section-overlay"></div>
-                                            </td>
-
-                                            <td style="background-color: #F3DCD4"></td>
-
-                                            <td class="table-background-image-wrap rock-background-image">
-                                                <h3>Rock & Roll</h3>
-
-                                                <p class="mb-2">7:00 - 11:00 PM</p>
-
-                                                <p>By Rihana</p>
-
-                                                <div class="section-overlay"></div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">Day 2</th>
-                
-                                            <td style="background-color: #ECC9C7"></td>
-
-                                            <td>
-                                                <h3>DJ Night</h3>
-
-                                                <p class="mb-2">6:30 - 9:30 PM</p>
-
-                                                <p>By Rihana</p>
-                                            </td>
-
-                                            <td style="background-color: #D9E3DA"></td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">Day 3</th>
-                
-                                            <td class="table-background-image-wrap country-background-image">
-                                                <h3>Country Music</h3>
-
-                                                <p class="mb-2">4:30 - 7:30 PM</p>
-
-                                                <p>By Rihana</p>
-
-                                                <div class="section-overlay"></div>
-                                            </td>
-
-                                            <td style="background-color: #D1CFC0"></td>
-
-                                            <td>
-                                                <h3>Free Styles</h3>
-
-                                                <p class="mb-2">6:00 - 10:00 PM</p>
-
-                                                <p>By Members</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="pricing-section section-padding section-bg" id="section_5">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-8 col-12 mx-auto">
-                            <h2 class="text-center mb-4">Plans, you' love</h2>
-                        </div>
-                        
-                        <div class="col-lg-6 col-12">
-                            <div class="pricing-thumb">
-                                <div class="d-flex">
-                                    <div>
-                                        <h3><small>Early Bird</small> $120</h3>
-
-                                        <p>Including good things:</p>
-                                    </div>
-
-                                    <p class="pricing-tag ms-auto">Save up to <span>50%</span></h2>
-                                </div>
-
-                                <ul class="pricing-list mt-3">
-                                    <li class="pricing-list-item">platform for potential customers</li>
-
-                                    <li class="pricing-list-item">digital experience</li>
-
-                                    <li class="pricing-list-item">high-quality sound</li>
-
-                                    <li class="pricing-list-item">standard content</li>
-                                </ul>
-
-                                <a class="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                                    <span>Buy Ticket</span>
-                                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="15.5"></circle><line x1="10" y1="18" x2="16" y2="12"></line><line x1="16" y1="12" x2="22" y2="18"></line></g></svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-12 mt-4 mt-lg-0">
-                            <div class="pricing-thumb">
-                                <div class="d-flex">
-                                    <div>
-                                        <h3><small>Standard</small> $240</h3>
-
-                                        <p>What makes a premium festava?</p>
-                                    </div>
-                                </div>
-
-                                <ul class="pricing-list mt-3">
-                                    <li class="pricing-list-item">platform for potential customers</li>
-
-                                    <li class="pricing-list-item">digital experience</li>
-
-                                    <li class="pricing-list-item">high-quality sound</li>
-
-                                    <li class="pricing-list-item">premium content</li>
-                                    
-                                    <li class="pricing-list-item">live chat support</li>
-                                </ul>
-
-                                <a class="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
-                                    <span>Buy Ticket</span>
-                                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="15.5"></circle><line x1="10" y1="18" x2="16" y2="12"></line><line x1="16" y1="12" x2="22" y2="18"></line></g></svg>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="contact-section section-padding" id="section_6">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-8 col-12 mx-auto">
-                            <h2 class="text-center mb-4">Interested? Let's talk</h2>
-
-                            <nav class="d-flex justify-content-center">
-                                <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab" role="tablist">
-                                    <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab" data-bs-target="#nav-ContactForm" type="button" role="tab" aria-controls="nav-ContactForm" aria-selected="false">
-                                        <h5>Contact Form</h5>
-                                    </button>
-
-                                    <button class="nav-link" id="nav-ContactMap-tab" data-bs-toggle="tab" data-bs-target="#nav-ContactMap" type="button" role="tab" aria-controls="nav-ContactMap" aria-selected="false">
-                                        <h5>Google Maps</h5>
-                                    </button>
-                                </div>
-                            </nav>
-
-                            <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel" aria-labelledby="nav-ContactForm-tab">
-                                    <form class="custom-form contact-form mb-5 mb-lg-0" action="#" method="post" role="form">
-                                        <div class="contact-form-body">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-md-6 col-12">
-                                                    <input type="text" name="contact-name" id="contact-name" class="form-control" placeholder="Full name" required>
-                                                </div>
-
-                                                <div class="col-lg-6 col-md-6 col-12">
-                                                    <input type="email" name="contact-email" id="contact-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
-                                                </div>
-                                            </div>
-
-                                            <input type="text" name="contact-company" id="contact-company" class="form-control" placeholder="Company" required>
-
-                                            <textarea name="contact-message" rows="3" class="form-control" id="contact-message" placeholder="Message"></textarea>
-
-                                            <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                                <button type="submit" class="form-control">Send message</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <div class="tab-pane fade" id="nav-ContactMap" role="tabpanel" aria-labelledby="nav-ContactMap-tab">
-                                    <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29974.469402870927!2d120.94861466021855!3d14.106066818082482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd777b1ab54c8f%3A0x6ecc514451ce2be8!2sTagaytay%2C%20Cavite%2C%20Philippines!5e1!3m2!1sen!2smy!4v1670344209509!5m2!1sen!2smy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    <!-- You can easily copy the embed code from Google Maps -> Share -> Embed a map // -->
-                    </div>
-                </div>
-            </div>
-
-            </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="site-footer-top">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-12">
-                        <h2 class="text-white mb-lg-0">Mapa Retrô</h2>
-                    </div>
-
-                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
-                        <ul class="social-icon d-flex justify-content-lg-end">
-                            <li class="social-icon-item">
-                                <a href="https://w.app/mapa_retro" class="social-icon-link">
-                                    <span class="bi-whatsapp"></span>
-                                </a>
-                            </li>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="https://www.instagram.com/marcal_gt?igsh=MWRrZ2NoZzh4MWNheQ%3D%3D&utm_source=qr"
-                                    class="social-icon-link">
-                                    <span class="bi-instagram"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="container">
-            <div class="row">
+    <section id="integrantes" class="py-5 bg-dark">
+      <div class="container">
+        <h3 class="section-title mb-5 text-center">Integrantes da Banda</h3>
+        <div class="row g-4">
 
-                <div class="col-lg-6 col-12 mb-4 pb-2">
-                    <h5 class="text-white mb-3">Links</h5>
-
-                    <ul class="site-footer-links">
-                        <li class="site-footer-link-item">
-                            <a href="#section_1" class="site-footer-link">Dashboard</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#section_2" class="site-footer-link">Sobre</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#section_3" class="site-footer-link">Artistas</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                    <h5 class="text-white mb-3">Tem alguma dúvida?</h5>
-
-                    <p class="text-white d-flex mb-1">
-                        <a href="tel: 090-080-0760" class="site-footer-link">
-                            +55 (27) 99747-5817
-                        </a>
-                    </p>
-
-                    <p class="text-white d-flex">
-                        <a href="mailto:hello@company.com" class="site-footer-link">
-                            Cristianomarcal10@gmail.com
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
-                    <h5 class="text-white mb-3">Endereço</h5>
-
-                    <p class="text-white d-flex mt-3 mb-2">
-                        Espírito Santo, Vila Velha</p>
-
-                    <a class="link-fx-1 color-contrast-higher mt-3" href="#">
-                        <span>Atualizar</span>
-                        <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="16" cy="16" r="15.5"></circle>
-                                <line x1="10" y1="18" x2="16" y2="12"></line>
-                                <line x1="16" y1="12" x2="22" y2="18"></line>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
+          <!-- Integrante 1 -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 shadow-sm bg-dark">
+              <img src="/data/images/cristiano-1.jpg" class="card-img-top" alt="Nome do Integrante">
+              <div class="card-body text-center text-white">
+                <h5 class="card-title">Cristiano Marçal</h5>
+                <p class="card-text text-muted">Guitarra e Violão</p>
+                <p class="card-text">Fundador da banda, traz o timbre marcante da música raiz.</p>
+              </div>
             </div>
-        </div>
+          </div>
 
-        <div class="site-footer-bottom">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-3 col-12 mt-5">
-                        <p class="copyright-text">Copyright © 2036 Mapa Retrô</p>
-                    </div>
-
-                    <div class="col-lg-8 col-12 mt-lg-5">
-                        <ul class="site-footer-links">
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Termos &amp; Condições</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Política de privacidade</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Seu feedback</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+          <!-- Integrante 2 -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="/data/images/vocalista.jpg" class="card-img-top" alt="Nome do Integrante">
+              <div class="card-body text-center">
+                <h5 class="card-title">Maria Santos</h5>
+                <p class="card-text text-muted">Sanfona</p>
+                <p class="card-text">Dá o tom tradicional e nostálgico com sua sanfona envolvente.</p>
+              </div>
             </div>
+          </div>
+
+          <!-- Integrante 3 -->
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="img/integrante3.jpg" class="card-img-top" alt="Nome do Integrante">
+              <div class="card-body text-center">
+                <h5 class="card-title">Carlos Neto</h5>
+                <p class="card-text text-muted">Baixo</p>
+                <p class="card-text">Responsável pelo groove sertanejo com pegada moderna.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adicione mais blocos iguais conforme necessário -->
+
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!--
 
-T e m p l a t e M o
+  </main>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-4 text-center">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 MAPA RETRÔ - Todos os direitos reservados.</p>
+      <a href="#" class="text-white m-2 text-decoration-none">Instagram</a>
+      <a href="#" class="text-white m-2 text-decoration-none">Facebook</a>
+      <a href="#" class="text-white m-2 text-decoration-none">YouTube</a>
+    </div>
+  </footer>
 
--->
-
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/click-scroll.js"></script>
-    <script src="js/custom.js"></script>
+  <!-- Bootstrap JS + Custom Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/script.js"></script>
 
 </body>
 

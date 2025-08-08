@@ -1,3 +1,0 @@
-# Banda Mapa Retrô
-
-Em andamento...
