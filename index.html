@@ -16,14 +16,14 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="bg-light">
+<body>
 
   <!-- HEADER -->
   <header class="bg-dark text-white py-3 px-4">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
-      <!-- Logo sempre visível -->
-      <div class="fs-4 fw-bold">MAPA RETRÔ</div>
+      <!-- Logo -->
+      <div class="fs-4 fw-bold logo">MAPA RETRÔ</div>
 
       <!-- Menu Desktop -->
       <nav class="d-none d-md-block">
@@ -35,13 +35,12 @@
         </ul>
       </nav>
 
-      <!-- Menu Mobile -->
+      <!-- Botão Mobile -->
       <button class="btn btn-outline-light d-md-none" id="menu-toggle">&#9776;</button>
     </div>
   </header>
 
-  <!-- Aside Mobile Menu -->
-  <!-- ASIDE MOBILE MENU -->
+  <!-- Menu Mobile -->
   <aside id="mobile-menu" class="mobile-menu bg-dark text-white p-4">
     <button class="btn-close btn-close-white mb-4" id="close-menu"></button>
     <ul class="nav flex-column">
@@ -53,7 +52,7 @@
   </aside>
 
   <main>
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section id="hero" class="text-center text-white d-flex align-items-center justify-content-center">
       <div class="container">
         <h2 class="display-5">Sertanejo Raiz com Identidade</h2>
@@ -61,27 +60,26 @@
       </div>
     </section>
 
-    <!-- SOBRE A BANDA -->
-    <section id="sobre" class=" bg-dark py-5">
+    <!-- SOBRE -->
+    <section id="sobre" class="bg-dark pt-5 pb-5">
       <div class="container">
-        <h3 class="section-title mb-4">Sobre a Banda</h3>
+        <h3 class="section-title">Sobre a Banda</h3>
         <div class="row g-4 align-items-center">
           <div class="col-md-6">
-            <p class="mx-3">
+            <p class="mx-2">
               A <strong>MAPA RETRÔ</strong> é uma banda apaixonada pelo sertanejo clássico e de raiz.
               Com influências dos modões antigos, trazemos à tona a verdadeira essência do som do interior
               com autenticidade e emoção.
             </p>
           </div>
           <div class="col-md-6">
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/YOUTUBE_ID" title="Vídeo da Banda" allowfullscreen></iframe>
-            </div>
+            <img src="/data/images/mapa1.jpg" class="rounded w-100 shadow-sm" alt="MAPA RETRÔ em apresentação">
           </div>
         </div>
       </div>
     </section>
 
+    <!-- INTEGRANTES -->
     <section id="integrantes" class="py-5 bg-dark">
       <div class="container">
         <h3 class="section-title mb-5 text-center">Integrantes da Banda</h3>
@@ -89,51 +87,65 @@
 
           <!-- Integrante 1 -->
           <div class="col-12 col-sm-6 col-md-4">
-            <div class="card h-100 shadow-sm bg-dark">
-              <img src="/data/images/cristiano-1.jpg" class="card-img-top" alt="Nome do Integrante">
-              <div class="card-body text-center text-white">
+            <div class="card integrante-card h-100 shadow-sm">
+              <img src="/data/images/cristiano-1.jpg" class="card-img-top" alt="Cristiano Marçal">
+              <div class="card-body text-center">
                 <h5 class="card-title">Cristiano Marçal</h5>
-                <p class="card-text text-muted">Guitarra e Violão</p>
-                <p class="card-text">Fundador da banda, traz o timbre marcante da música raiz.</p>
+                <p class="funcao">Guitarra e Violão</p>
+                <p class="descricao">Fundador da banda, traz o timbre marcante da música raiz.</p>
               </div>
             </div>
           </div>
 
           <!-- Integrante 2 -->
           <div class="col-12 col-sm-6 col-md-4">
-            <div class="card h-100 shadow-sm">
-              <img src="/data/images/vocalista.jpg" class="card-img-top" alt="Nome do Integrante">
+            <div class="card integrante-card h-100 shadow-sm">
+              <img src="/data/images/vocalista.jpg" class="card-img-top" alt="Maria Santos">
               <div class="card-body text-center">
-                <h5 class="card-title">Maria Santos</h5>
-                <p class="card-text text-muted">Sanfona</p>
-                <p class="card-text">Dá o tom tradicional e nostálgico com sua sanfona envolvente.</p>
+                <h5 class="card-title">Mario</h5>
+                <p class="funcao">Cantora</p>
+                <p class="descricao">Dá o tom tradicional e nostálgico com sua voz envolvente.</p>
               </div>
             </div>
           </div>
 
           <!-- Integrante 3 -->
           <div class="col-12 col-sm-6 col-md-4">
-            <div class="card h-100 shadow-sm">
-              <img src="img/integrante3.jpg" class="card-img-top" alt="Nome do Integrante">
+            <div class="card integrante-card h-100 shadow-sm">
+              <img src="/data/images/integrante3.jpg" class="card-img-top" alt="Carlos Neto">
               <div class="card-body text-center">
-                <h5 class="card-title">Carlos Neto</h5>
-                <p class="card-text text-muted">Baixo</p>
-                <p class="card-text">Responsável pelo groove sertanejo com pegada moderna.</p>
+                <h5 class="card-title">Carlos</h5>
+                <p class="funcao">Baixo</p>
+                <p class="descricao">Responsável pelo groove sertanejo com pegada moderna.</p>
               </div>
             </div>
           </div>
-
-          <!-- Adicione mais blocos iguais conforme necessário -->
 
         </div>
       </div>
     </section>
 
-
+    <!-- VÍDEOS -->
+    <section id="videos" class="bg-dark py-5">
+      <div class="container">
+        <h3 class="section-title mb-5 text-center">Vídeos</h3>
+        <div class="video-container">
+          <iframe 
+            src="https://www.youtube.com/embed/VlO9CUFSbsA?si=3k5D-RtFuIg2ohVh"
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
   </main>
+
   <!-- FOOTER -->
   <footer class="bg-dark text-white py-4 text-center">
-    <div class="container">
+    <div class="container" id="contato">
       <p class="mb-2">&copy; 2025 MAPA RETRÔ - Todos os direitos reservados.</p>
       <a href="#" class="text-white m-2 text-decoration-none">Instagram</a>
       <a href="#" class="text-white m-2 text-decoration-none">Facebook</a>
@@ -141,10 +153,9 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS + Custom Script -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts/script.js"></script>
-
 </body>
 
 </html>
