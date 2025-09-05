@@ -1,161 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MAPA RETRÔ</title>
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Merriweather&display=swap" rel="stylesheet">
-
-  <!-- Estilo personalizado -->
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Mapa Retrô</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
-
-  <!-- HEADER -->
-  <header class="bg-dark text-white py-3 px-4">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-
-      <!-- Logo -->
-      <div class="fs-4 fw-bold logo">MAPA RETRÔ</div>
-
-      <!-- Menu Desktop -->
-      <nav class="d-none d-md-block">
-        <ul class="nav gap-3">
-          <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#integrantes">Integrantes</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#videos">Vídeos</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-
-      <!-- Botão Mobile -->
-      <button class="btn btn-outline-light d-md-none" id="menu-toggle">&#9776;</button>
-    </div>
-  </header>
-
-  <!-- Menu Mobile -->
-  <aside id="mobile-menu" class="mobile-menu bg-dark text-white p-4">
-    <button class="btn-close btn-close-white mb-4" id="close-menu"></button>
-    <ul class="nav flex-column">
-      <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#integrantes">Integrantes</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#videos">Vídeos</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
-    </ul>
-  </aside>
-
-  <main>
-    <!-- HERO -->
-    <section id="hero" class="text-center text-white d-flex align-items-center justify-content-center">
-      <div class="container">
-        <h2 class="display-5">Sertanejo Raiz com Identidade</h2>
-        <p class="lead">Modão, viola e coração no compasso</p>
-      </div>
-    </section>
-
-    <!-- SOBRE -->
-    <section id="sobre" class="bg-dark pt-5 pb-5">
-      <div class="container">
-        <h3 class="section-title">Sobre a Banda</h3>
-        <div class="row g-4 align-items-center">
-          <div class="col-md-6">
-            <p class="mx-2">
-              A <strong>MAPA RETRÔ</strong> é uma banda apaixonada pelo sertanejo clássico e de raiz.
-              Com influências dos modões antigos, trazemos à tona a verdadeira essência do som do interior
-              com autenticidade e emoção.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <img src="data/images/mapa1.jpg" class="rounded w-100 shadow-sm" alt="MAPA RETRÔ em apresentação">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- INTEGRANTES -->
-    <section id="integrantes" class="py-5 bg-dark">
-      <div class="container">
-        <h3 class="section-title mb-5 text-center">Integrantes da Banda</h3>
-        <div class="row g-4">
-
-          <!-- Integrante 1 -->
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="card integrante-card h-100 shadow-sm">
-              <img src="data/images/cristiano-1.jpg" class="card-img-top" alt="Cristiano Marçal">
-              <div class="card-body text-center">
-                <h5 class="card-title">Cristiano Marçal</h5>
-                <p class="funcao">Guitarra e Violão</p>
-                <p class="descricao">Fundador da banda, traz o timbre marcante da música raiz.</p>
-              </div>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Mapa Retrô</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
+                </ul>
             </div>
-          </div>
-
-          <!-- Integrante 2 -->
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="card integrante-card h-100 shadow-sm">
-              <img src="data/images/vocalista.jpg" class="card-img-top" alt="Maria Santos">
-              <div class="card-body text-center">
-                <h5 class="card-title">Mario</h5>
-                <p class="funcao">Cantora</p>
-                <p class="descricao">Dá o tom tradicional e nostálgico com sua voz envolvente.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Integrante 3 -->
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="card integrante-card h-100 shadow-sm">
-              <img src="data/images/integrante3.jpg" class="card-img-top" alt="Carlos Neto">
-              <div class="card-body text-center">
-                <h5 class="card-title">Carlos</h5>
-                <p class="funcao">Baixo</p>
-                <p class="descricao">Responsável pelo groove sertanejo com pegada moderna.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
-
-    <!-- VÍDEOS -->
-    <section id="videos" class="bg-dark py-5">
-      <div class="container">
-        <h3 class="section-title mb-5 text-center">Vídeos</h3>
-        <div class="video-container">
-          <iframe 
-            src="https://www.youtube.com/embed/VlO9CUFSbsA?si=3k5D-RtFuIg2ohVh"
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-          </iframe>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 class="mx-auto my-0 text-uppercase p-5">Mapa Retrô</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">A música de qualidade está aqui. Estamos há mais de 20
+                        anos trazendo entretenimento e emoção para todos.</h2>
+                    <a class="btn btn-primary" href="#about">Ver Mais</a>
+                </div>
+            </div>
         </div>
-      </div>
+    </header>
+    <!-- About-->
+    <section class="signup-section" id="signup">
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">Sobre nós</h2>
+                        <p class="text-white-50">
+                            Somos uma banda apaixonada pelas raízes musicais brasileiras. Com influências de clássicos
+                            atemporais, buscamos resgatar a verdadeira essência do som do interior, trazendo
+                            autenticidade e emoção em cada apresentação.
+                            Trazemos o melhor da música para os seus ouvidos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="py-5 mb-5">
+            <div class="container align-items-center text-center">
+                <div class="video-container aria-controls">
+                    <iframe src="https://www.youtube.com/embed/VlO9CUFSbsA?si=3k5D-RtFuIg2ohVh"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  controls>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 mt-5">
+                <div class="col-md-10 col-lg-8 mx-auto text-center mt-5">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <h2 class="text-white mb-5">Entre em contato conosco!</h2>
+                    <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Email address input-->
+                        <div class="row input-group-newsletter">
+                            <div class="col"><input class="form-control" id="emailAddress" type="email"
+                                    placeholder="Digíte seu e-mail..." aria-label="Digíte seu e-mail..."
+                                    data-sb-validations="required,email" /></div>
+                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton"
+                                    type="submit">Notifique-me</button></div>
+                        </div>
+                        <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">Um e-mail é
+                            necessário</div>
+                        <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email inválido.</div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3 mt-2 text-white">
+                                <div class="fw-bolder">Envio feito!</div>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3 mt-2">Erro ao enviar a mensagem</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="bg-dark text-white py-4 text-center">
-    <div class="container" id="contato">
-      <p class="mb-2">&copy; 2025 MAPA RETRÔ - Todos os direitos reservados.</p>
-      <a href="#" class="text-white m-2 text-decoration-none">Instagram</a>
-      <a href="#" class="text-white m-2 text-decoration-none">Facebook</a>
-      <a href="#" class="text-white m-2 text-decoration-none">YouTube</a>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="scripts/script.js"></script>
+    <!-- Contact-->
+    <section class="contact-section bg-black"  id="contatos">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5" >
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Endereço</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">Espírito Santo, Brasil.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50"><a href="#!">cristiano@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Número</h4>
+                            <hr class="my-4 mx-auto" />
+                            <div class="small text-black-50">+55 (27) 99747-5817</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social d-flex justify-content-center">
+                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-2" href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5">Copyright &copy; Seus direitos reservados 2025.</div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 </html>
